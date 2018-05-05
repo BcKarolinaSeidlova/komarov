@@ -1,0 +1,115 @@
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 100vW;
+}
+
+/*
+*
+* HEADER
+*
+*/
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.nazev {
+	justify-content: center;
+}
+h1 {
+	margin: 0;
+}
+
+
+/*
+*
+*NAVIGACE
+*
+*/
+.navigation {
+	display: none;
+	justify-content: center;
+	border-top: 2px solid  #683b05;
+	border-bottom: 2px solid  #683b05;
+	background-color: white;
+
+}
+
+.nav-list {
+	align-items: center;
+    list-style-type: none;
+    padding: 0px;
+
+}
+
+.nav-item {	
+	font-size: 1.2em;
+	background-color: white;
+    color: black;
+}
+
+
+.nav-item:hover {
+    background-color:  #683b05;
+    color: white;
+    border-top: 2px solid  #683b05;
+	border-bottom: 2px solid  #683b05;
+}
+
+/*
+*
+* MAIN
+*
+*/
+
+
+
+
+
+
+/*
+*
+* FOOTER
+*
+*/
+.footer {
+	display: flex;
+	background: #683b05;
+	color: white;
+	justify-content: center;
+
+}
+
+
+
+/*
+*
+* Hamburger menu icon
+*
+*/
+.hamburger {
+	cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #683b05;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}

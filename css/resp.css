@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px) {
+.hamburger{
+	display: none;
+}
+
+.navigation {
+	display: flex;
+	padding: 0px;
+	}
+.nav-list {
+	display: flex;
+}
+.nav-item {
+	padding: 5px;
+}
+.header {
+	justify-content: center;
+}
+}
