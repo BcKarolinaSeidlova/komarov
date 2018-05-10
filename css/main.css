@@ -1,10 +1,15 @@
+body {
+	background-color: #f4ddba;
+	color: #683b05;
+}
 .content {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .box {
-	width: 100vW;
+	width: 95vW;
 }
 
 /*
@@ -16,10 +21,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 100vW;
+	background: #ffeddb;
+	box-shadow: 0px 12px 12px #c1a07c;
 }
-.nazev {
-	justify-content: center;
-}
+
 h1 {
 	margin: 0;
 }
@@ -32,10 +38,11 @@ h1 {
 */
 .navigation {
 	display: none;
+	width: 100vw;
 	justify-content: center;
-	border-top: 2px solid  #683b05;
-	border-bottom: 2px solid  #683b05;
-	background-color: white;
+	border-top: 5px solid  #f4ddba;
+	background: #ffeddb;
+	box-shadow: 0px 12px 12px #c1a07c;
 
 }
 
@@ -48,16 +55,13 @@ h1 {
 
 .nav-item {	
 	font-size: 1.2em;
-	background-color: white;
     color: black;
 }
 
-
 .nav-item:hover {
-    background-color:  #683b05;
+    background-color: #c1a07c;
     color: white;
-    border-top: 2px solid  #683b05;
-	border-bottom: 2px solid  #683b05;
+    
 }
 
 /*
@@ -65,10 +69,39 @@ h1 {
 * MAIN
 *
 */
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.mapa {
+	margin-top: 20px;
+}
 
+.karty {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
+.karty > a {
+	text-decoration: none;
+	color: #683b05;
+}
 
+.karta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+	width: 300px;
+	min-height: 200px;
+	border: 1px solid #c1a07c;
+	border-radius: 8px;
+	background: #f9efe3;
+	box-shadow: 5px 5px 5px #c1a07c;
+}
 
 
 /*
@@ -78,6 +111,7 @@ h1 {
 */
 .footer {
 	display: flex;
+	width: 100vw;
 	background: #683b05;
 	color: white;
 	justify-content: center;
@@ -97,7 +131,7 @@ h1 {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #683b05;
+    background-color: #c1a07c;
     margin: 6px 0;
     transition: 0.4s;
 }
