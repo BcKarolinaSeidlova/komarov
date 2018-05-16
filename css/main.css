@@ -85,10 +85,6 @@ h1 {
 	justify-content: space-around;
 }
 
-.karty > a {
-	text-decoration: none;
-	color: #683b05;
-}
 
 .karta {
 	display: flex;
@@ -103,6 +99,15 @@ h1 {
 	box-shadow: 5px 5px 5px #c1a07c;
 }
 
+.karta > img {
+	border-top-left-radius: 8px; 
+	border-top-right-radius: 8px;
+}
+
+.karta > a {
+	text-decoration: none;
+	color: #683b05;
+}
 
 /*
 *
