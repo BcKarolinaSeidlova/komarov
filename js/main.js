@@ -12,14 +12,6 @@ karta.addEventListener('click', function(){
 }
 
 
-/*let karta1 = document.getElementById("karta1");
-let link1 = document.getElementById("z1");
-
-
-	karta1.addEventListener('click', function(){});
-	*/
-
-
 
 function hamburger(x) {
     x.classList.toggle("change");
@@ -33,3 +25,4 @@ function hamburger(x) {
 
 
 };
+

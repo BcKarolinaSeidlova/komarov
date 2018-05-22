@@ -64,6 +64,11 @@ h1 {
     
 }
 
+.nav-item > a {
+	text-decoration: none;
+	color: #683b05;
+}
+
 /*
 *
 * MAIN
@@ -108,6 +113,59 @@ h1 {
 	text-decoration: none;
 	color: #683b05;
 }
+
+.main-his {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 3vh;
+}
+
+.page {
+	display: flex;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	width: 69%;
+	font-size: 20px;
+}
+
+.text > p {
+	display: flex;
+	text-align: justify;
+	padding-left: 1vw;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+}
+
+.nav-list-svisle {
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+}
+
+.nav-list-svisle > .nav-item {
+	list-style: none;
+	color: #683b05;
+}
+
+.nav-list-svisle > .nav-item:hover {
+	background-color: #c1a07c;
+    color: white;
+    cursor: pointer;
+}
+
+.nadpis {
+	display: flex;
+	justify-content: center;
+}
+
 
 /*
 *
