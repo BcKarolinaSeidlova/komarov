@@ -11,6 +11,13 @@ body {
 .box {
 	width: 95vW;
 }
+h1, h2, h3 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+}
 
 /*
 *
@@ -54,8 +61,10 @@ h1 {
 }
 
 .nav-item {	
+	width: 95%;
 	font-size: 1.2em;
     color: black;
+
 }
 
 .nav-item:hover {
@@ -118,45 +127,50 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 3vh;
-}
-
-.page {
-	display: flex;
+	padding-top: 4vh;
+	border-bottom: 1px solid #683b05;
 }
 
 .text {
 	display: flex;
 	flex-direction: column;
-	width: 69%;
+	width: 100%;
 	font-size: 20px;
 }
 
 .text > p {
 	display: flex;
 	text-align: justify;
-	padding-left: 1vw;
 }
 
 .list {
 	display: flex;
 	flex-direction: column;
-	width: 15%;
+	width: 100%;
 }
 
-.nav-list-svisle {
+.nav-list-his {
 	display: flex;
-	flex-direction: column;
-	padding-left: 5px;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	padding-left: 0px;
+	margin-bottom: 10px;
 }
 
-.nav-list-svisle > .nav-item {
+.nav-list-his > .nav-item {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 	list-style: none;
 	color: #683b05;
+	width: 85%;
+	height: 2em;
 }
 
-.nav-list-svisle > .nav-item:hover {
-	background-color: #c1a07c;
+.nav-list-his > .nav-item > a:hover {
+	background: rgba(193,160,124,1);
     color: white;
     cursor: pointer;
 }
@@ -164,6 +178,7 @@ h1 {
 .nadpis {
 	display: flex;
 	justify-content: center;
+	font-size: 1.5em;
 }
 
 

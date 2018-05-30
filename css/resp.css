@@ -15,10 +15,36 @@
 	
 .nav-list {
 	display: flex;
+	visibility: visible;
 }
+
+.main-his {
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.list {
+	display: flex;
+	width: 15%;
+}
+
+.nav-list-his {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-list-his > .nav-item {
+	text-align: left;
+	}
+
 .nav-item {
+	
+	width: 85px;
 	padding: 5px;
+	text-align: center;
 }
+
+
 .header {
 	justify-content: center;
 }
@@ -26,5 +52,9 @@
 	flex-wrap: wrap;
 }
 
+.text {
+	width: 69%;
+	
+}
 
 }
