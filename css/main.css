@@ -56,20 +56,22 @@ h1 {
 .nav-list {
 	align-items: center;
     list-style-type: none;
+    justify-content: center;
     padding: 0px;
 
 }
 
-.nav-item {	
+.nav-item {
 	width: 95%;
 	font-size: 1.2em;
-    color: black;
+    
 
 }
 
 .nav-item:hover {
     background-color: #c1a07c;
     color: white;
+    cursor: pointer;
     
 }
 
@@ -193,9 +195,44 @@ h1 {
 	background: #683b05;
 	color: white;
 	justify-content: center;
+	margin-top: 15px;
 
 }
 
+
+/*
+*vizitka místa
+*/
+.misto {
+	display: flex;
+	justify-content: center;
+}
+.vizitka {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.left {
+	width: 95vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right {
+	width: 95vW;
+
+}
+.right > p {
+	text-align: justify;
+	
+}
 
 
 /*
@@ -224,4 +261,33 @@ h1 {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*
+* SLIDESHOW
+*/
+
+.slideshow {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	width: 45px;
+	font-size: 30px;
+	color: black;
+	cursor: pointer;
+	color: #683b05;;
+}
+
+.btn:hover {
+	background: #c1a07c;
 }

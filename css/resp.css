@@ -1,8 +1,9 @@
 
 @media screen and (min-width: 600px) {
 	.box {
-		width: 90vw;
+		width: 95vw;
 	}
+
 .hamburger{
 	display: none;
 }
@@ -52,9 +53,28 @@
 	flex-wrap: wrap;
 }
 
+.vizitka {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+.left {
+	width: 25vw;
+}
+
+.right {
+width: 60vw;
+justify-content: flex-end;
+
+}
+
 .text {
 	width: 69%;
 	
 }
 
 }
+
+
