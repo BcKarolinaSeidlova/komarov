@@ -75,6 +75,35 @@ justify-content: flex-end;
 	
 }
 
+.slide {
+	max-width: 25vw;
+}
+
 }
 
 
+@media screen and (max-width: 599px) {
+	.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  min-width: 45px;
+  min-height: 45px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  margin-right: 0.6em;
+}
+
+.prev {
+	left: 0;
+	margin-left: 0.6em;
+}
+}
