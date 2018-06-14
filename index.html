@@ -5,6 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<!-- script mapy-->
+	<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+	<script type="text/javascript">Loader.load();</script>
+
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/resp.css">
 </head>
@@ -32,24 +36,30 @@
 
 	</nav>
 	<main class="box main">
-		<section class="mapa"> <img src="https://picsum.photos/400/300?image=976" alt="obrazek"> </section>
+		<section class="mapa"> 
+
+		 <div id="m" style="height:360px"></div>
+    	<a href="#" onclick='window.open("https://mapy.cz/s/2niYz");return false;'>
+      	<p>Zobrazit mapu</p> </a>
+
+		</section>
 		<section> <h2> Přehled míst</h2> </section>
 		<section class="karty">
 		<figure class="karta" id="karta1">
-			<img src="https://picsum.photos/300/150?image=1057" alt="obrazek">
+			<img class="profil" src="img/pmbolestna1.jpg" alt="Panna Maria Bolestná">
 			<div>
 				<a href="z1.html" id="z1" class="link"></a>
 				<h3> Zastavení </h3>
-				<p> název lokality</p>
+				<p> Panna Maria Bolestná </p>
 			</div>
 		</figure> 
 
 	<figure class="karta" id="karta2">
-			<img src="https://picsum.photos/300/150?image=955" alt="obrazek">
+			<img class="profil" src="img/pmaria.jpg" alt="Panna Maria v Podevsí">
 			<div>
 				<a href="z2.html" id="z2" class="link"></a>
 				<h3> Zastavení </h3>
-				<p> název lokality</p>
+				<p> Panna Maria v Podevsí</p>
 			</div>
 		</figure> 
 
@@ -65,10 +75,12 @@
 	</section>
 	</main>
 	<footer class=" footer">
-		<p> Designed by Karolina, 2018</p>
+		<p> Designed by KajaCZ, 2018</p>
 	</footer>
 
 
 <script src="js/main.js"></script>
+<!--mapy-->
+<script src="js/mapa.js"> </script>
 </body>
 </html>
