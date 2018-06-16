@@ -13,7 +13,7 @@ var obrazek = "https://api.mapy.cz/img/api/marker/drop-red.png";
     "Zastavení 5": "49°9'10.596\"N, 17°34'8.951\"E",
     "Zastavení 6": "49°9'20.959\"N, 17°33'50.411\"E",
     "Zastavení 7": "49°9'26.589\"N, 17°33'30.390\"E",
-    "Zastavení 8": "49°8'59.501\"N, 17°33'56.895\"E"
+    "Zastavení 8": "49°8'59.501\"N, 17°33'56.895\"E",
     "Zastavení 9": "49°9'8.090\"N, 17°34'40.000\"E",
     "Zastavení 10": "49°8'51.113\"N, 17°33'26.383\"E",
     "Zastavení 11": "49°9'19.306\"N, 17°33'36.270\"E",
@@ -52,3 +52,4 @@ for (var name in data) { /* Vyrobit značky */
 
   var cz = m.computeCenterZoom(souradnice); /* Spočítat pozici mapy tak, aby značky byly vidět */
   m.setCenterZoom(cz[0], cz[1]);
+

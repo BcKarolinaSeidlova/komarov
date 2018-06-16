@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 	.box {
 		width: 95vw;
 	}
@@ -16,8 +16,9 @@
 	
 .nav-list {
 	display: flex;
-	visibility: visible;
+	flex-direction: row;
 }
+
 
 .main-his {
 	flex-direction: row;
@@ -47,8 +48,10 @@
 
 
 .header {
+	max-height: 37px;
 	justify-content: center;
 }
+
 .main {
 	flex-wrap: wrap;
 }
@@ -57,6 +60,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: space-around;
 }
 
 
