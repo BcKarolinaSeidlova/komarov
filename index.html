@@ -13,11 +13,11 @@
 	<link rel="stylesheet" href="css/resp.css">
 </head>
 <body class="content">
-	<header class="header">
+	<header class="box header">
 	
 		<h1> Název stránky</h1>
 	
-	<div class="hamburger" onclick="hamburger(this)">
+	<div class="hamburger" id ="ham">
 				
 			  <div class="bar1"></div>
 			  <div class="bar2"></div>
@@ -26,12 +26,12 @@
 	
 	
 	</header>
-	<nav class="navigation" id="navigation">
+	<nav class="box navigation" id="navigation">
 		
 			<ul class="nav-list">
-				<li class="nav-item"> <a href="historie.html">Historie </a>  </li>
-				<li class="nav-item"> <a href="index.html"> Zastavení</a> </li>
-				<li class="nav-item"> Kontakt </li>
+				<li class="nav-item"> <a href="historie.html" class="nav-link"> </a> Historie </li>
+				<li class="nav-item active"> <a href="index.html" class="nav-link"> </a>Zastavení </li>
+				<li class="nav-item"> <a href=# class="nav-link"></a> Kontakt </li>
 			</ul>
 
 	</nav>
@@ -39,7 +39,7 @@
 		<section class="mapa"> 
 
 			<div id="m" style="height:360px"></div>
-	    	<a href="#" onclick='window.open("https://mapy.cz/s/2niYz");return false;'> Zobrazit mapu </a>
+	    	<a target="blank" href="https://mapy.cz/s/2niYz"> Zobrazit mapu </a>
 
 		</section>
 
@@ -47,47 +47,44 @@
 		<section> <h2> Přehled míst</h2> </section>
 		<section class="karty">
 		<figure class="karta" id="karta1">
-<<<<<<< HEAD
+
 			<img class="profil" src="img/pmaria.JPG" alt="Panna Maria v Podevsí">
-||||||| merged common ancestors
->>>>>>> 3cc87f1c2a96532ed4a9091326bad2a094441742
-			<div>
-				<a href="z1.html" id="z1" class="link"></a>
+
+			<div class="popis">
+				<a href="#" id="z1" class="link"></a>
 				<h3> Zastavení 1 </h3>
 				<p> Panna Maria v Podevsí </p>
 			</div>
 		</figure> 
 
 	<figure class="karta" id="karta2">
-<<<<<<< HEAD
-			<img class="profil" src="img/pmbolestna1_edited.JPG" alt="Panna Maria Bolestná">
-||||||| merged common ancestors
 
->>>>>>> 3cc87f1c2a96532ed4a9091326bad2a094441742
-			<div>
-				<a href="z2.html" id="z2" class="link"></a>
-				<h3> Zastavení </h3>
+			<img class="profil" src="img/pmbolestna1.JPG" alt="Panna Maria Bolestná">
+
+			<div class="popis">
+				<a href="z1.html" id="z2" class="link"></a>
+				<h3> Zastavení 2</h3>
 				<p> Panna Maria Bolestná</p>
 			</div>
 		</figure> 
 
 
 		<figure class="karta" id="karta3">
-			<img class="profil" src="img/" alt="Kříž na návsi">
-			<div>
-				<a href="z3.html" id="z3" class="link"></a>
+			<img class="profil" src="img/izidor1.JPG" alt="Kříž na křižovatce">
+			<div class="popis">
+				<a href="#" id="z3" class="link"></a>
 				<h3> Zastavení 3 </h3>
-				<p> Kříž na návsi</p>
+				<p> Kříž na křižovatce</p>
 			</div>
 		</figure> 
 
 		
 		<figure class="karta" id="karta4">
-			<img class="profil" src="" alt="">
-			<div>
-				<a href="z4.html" id="z4" class="link"></a>
-				<h3> Zastavení </h3>
-				<p> název lokality</p>
+			<img class="profil" src="img/kriz_kopaniny2.JPG" alt="Kříž v Kopaninách">
+			<div class="popis">
+				<a href="#" id="z4" class="link"></a>
+				<h3> Zastavení 4</h3>
+				<p> Kříž v Kopaninách</p>
 			</div>
 		</figure> 
 
@@ -99,8 +96,8 @@
 
 	</section>
 	</main>
-	<footer class=" footer">
-		<p> Designed by KajaCZ, 2018</p>
+	<footer class="footer">
+		Designed by KajaCZ, 2018
 	</footer>
 
 
