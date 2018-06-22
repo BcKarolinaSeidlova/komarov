@@ -6,6 +6,7 @@ let navItemsHis = document.getElementsByClassName('nav-item-his');
 let navLinkHis = document.getElementsByClassName('link-his');
 let ham = document.getElementsByClassName('hamburger')[0];
 let nav =document.getElementsByClassName('navigation')[0];
+let head = document.getElementsByClassName('header')[0];
 
 
 window.addEventListener('resize', function () {
@@ -20,6 +21,34 @@ window.addEventListener('resize', function () {
     }
 
 });
+
+
+// When the user scrolls the page, execute myFunction 
+window.addEventListener('scroll', function (){
+    var sticky = head.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+ if(window.innerWidth < 900) {
+    if (window.pageYOffset >= sticky +65) {
+    head.classList.add("sticky");
+  } else {
+    head.classList.remove("sticky");
+  }
+ }
+
+let navHis = document.getElementById('navh');
+var stickyH = navHis.offsetTop;
+if(window.innerWidth >= 900) {
+    if (window.pageYOffset >= stickyH) {
+    navHis.classList.add("stickyH");
+  } else {
+    navHis.classList.remove("stickyH");
+  }
+}
+
+
+});
+
+
 
 
 

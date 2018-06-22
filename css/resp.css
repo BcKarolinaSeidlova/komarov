@@ -10,8 +10,8 @@
 
 .navigation {
 	display: flex;
-	padding: 0px;
 	height: 1.8em;
+	padding: 0px 5px 0px;
 	}
 	
 .nav-list {
@@ -23,6 +23,7 @@
 .main-his {
 	flex-direction: row;
 	justify-content: flex-start;
+	width: 97%;
 }
 
 .list {
@@ -81,7 +82,7 @@ justify-content: flex-end;
 }
 
 .text {
-	width: 69%;
+	width: 84%;
 	
 }
 

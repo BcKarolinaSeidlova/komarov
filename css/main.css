@@ -35,13 +35,34 @@ a {
 	justify-content: space-between;
 	background: #ffeddb;
 	box-shadow: 0px 12px 12px #c1a07c;
+	padding: 0px 5px 0px; 
 }
 
 .header > h1 {
 	margin: 0;
+	font-size: 2em;
 }
 
+.header > h4 {
+	margin: 0;
+}
 
+.head-left {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+
+
+}
+
+.head-left > h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.head-left > h4 {
+	margin: 0px 5px 5px;
+}
 /*
 *
 *NAVIGACE
@@ -53,6 +74,7 @@ a {
 	border-top: 5px solid  #f4ddba;
 	background: #ffeddb;
 	box-shadow: 0px 12px 12px #c1a07c;
+	padding: 0px 5px 0px;
 
 }
 
@@ -171,7 +193,7 @@ a {
 .text {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 97%;
 	font-size: 20px;
 }
 
@@ -348,4 +370,16 @@ a {
 .btn:hover {
 	background-color:rgba(255, 255, 255, 0.3);
 	
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 98%;
+}
+
+.stickyH {
+    position: fixed;
+    top: 0;
+    width: 14%;
 }
