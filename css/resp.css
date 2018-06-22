@@ -72,13 +72,13 @@
 
 
 .left {
-	width: 25vw;
+	width: 45vw;
 }
 
 .right {
-width: 60vw;
+width: 45vw;
 justify-content: flex-end;
-
+margin-top: 1.5em;
 }
 
 .text {
@@ -87,7 +87,7 @@ justify-content: flex-end;
 }
 
 .slide {
-	max-width: 25vw;
+	max-width: 90%;
 }
 
 

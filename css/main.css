@@ -275,6 +275,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 1.1em;
 }
 .left {
 	width: 95vw;
@@ -349,7 +350,7 @@ a {
 	align-items: center;
 	margin-top: 25px;
 	margin-bottom: 10px;
-	width: 90vw;
+	width: 44vw;
 }
 
 .slide {
