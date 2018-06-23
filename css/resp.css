@@ -23,6 +23,7 @@
 .main-his {
 	flex-direction: row;
 	justify-content: flex-start;
+	align-items: flex-start;
 	width: 97%;
 }
 
@@ -60,11 +61,19 @@
 	flex-wrap: wrap;
 }
 
+.mapa {
+	max-width: 98%;
+	height: 75vh;
+}
+
 .overlay { 
 	position: absolute;
 	opacity:0;
 	font-size: 2em;
-	justify-content: flex-end;
+	background: #f4ddba;
+	padding-left: inherit;
+	padding-right: inherit;
+	text-align: center;
 }
 
 .mapova:hover .overlay {

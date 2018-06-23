@@ -12,6 +12,9 @@ let head = document.getElementsByClassName('header')[0];
 window.addEventListener('resize', function () {
         if(window.innerWidth >= 900) {
            nav.style.display = "flex";
+           if (head.classList == 'box header sticky') {
+           head.classList.remove("sticky");
+           nav.classList.remove("sticky");}
         }
 
         else {
@@ -41,7 +44,6 @@ window.addEventListener('scroll', function (){
  }
 
 let navHis = document.getElementById('navh');
-var stickyHis = navHis.offsetTop;
 if(window.innerWidth >= 900) {
     if (window.pageYOffset >= stickyHis) {
     navHis.classList.add("sticky-his");
@@ -119,12 +121,10 @@ function plusDivs(n) {
 
 function showDivs(n) {
 
-
-    let i;
     let x = document.getElementsByClassName("slide");
     if (n > x.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
+    for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
     x[slideIndex-1].style.display = "flex"; 
