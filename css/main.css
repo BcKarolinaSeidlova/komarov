@@ -101,29 +101,25 @@ a {
 	align-items: center;
 }
 
-.mapa {
-	width: 85vw;
-	height: 70vh;
+.mapova {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	background-image: url("../img/mapa.png");
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+	justify-content: flex-end;
+	cursor: pointer;
 }
 
-.overlay {
-  opacity:0;
-  font-size: 2em;
+.mapa {
+	max-width: 98%;
+	height: 75vh;
 }
 
-.mapa:hover .overlay {
-	opacity: 0.8;
+.pod-mapou {
+	font-size: 1.5em;
 }
+
 
 .karty {
 	display: flex;
@@ -224,6 +220,7 @@ a {
 	width: 85%;
 	height: 2em;
 	font-size: 1.3em;
+	text-align: center;
 }
 
 .nav-item-his:hover {
