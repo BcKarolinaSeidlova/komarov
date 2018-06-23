@@ -1,4 +1,4 @@
-let karty = document.getElementsByClassName('karta');
+let karty = document.getElementsByClassName('klik');
 let linky = document.getElementsByClassName('link');
 let navItems = document.getElementsByClassName('nav-item');
 let navLink = document.getElementsByClassName('nav-link');
@@ -26,22 +26,27 @@ window.addEventListener('resize', function () {
 // When the user scrolls the page, execute myFunction 
 window.addEventListener('scroll', function (){
     var sticky = head.offsetTop;
+    let height = head.offsetHeight;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
  if(window.innerWidth < 900) {
-    if (window.pageYOffset >= sticky +65) {
+    if (window.pageYOffset >= sticky+1) {
     head.classList.add("sticky");
+    nav.classList.add("sticky");
+    nav.style.top = height+"px";
   } else {
     head.classList.remove("sticky");
+    nav.classList.remove("sticky");
+    nav.style.top = "";
   }
  }
 
 let navHis = document.getElementById('navh');
-var stickyH = navHis.offsetTop;
+var stickyHis = navHis.offsetTop;
 if(window.innerWidth >= 900) {
-    if (window.pageYOffset >= stickyH) {
-    navHis.classList.add("stickyH");
+    if (window.pageYOffset >= stickyHis) {
+    navHis.classList.add("sticky-his");
   } else {
-    navHis.classList.remove("stickyH");
+    navHis.classList.remove("sticky-his");
   }
 }
 

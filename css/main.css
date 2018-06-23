@@ -43,26 +43,9 @@ a {
 	font-size: 2em;
 }
 
-.header > h4 {
-	margin: 0;
-}
-
-.head-left {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
 
 
-}
 
-.head-left > h1 {
-	margin: 0;
-	font-size: 2em;
-}
-
-.head-left > h4 {
-	margin: 0px 5px 5px;
-}
 /*
 *
 *NAVIGACE
@@ -120,13 +103,26 @@ a {
 
 .mapa {
 	width: 85vw;
+	height: 70vh;
 	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/mapa.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.mapa > a {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+.overlay {
+  opacity:0;
+  font-size: 2em;
+}
+
+.mapa:hover .overlay {
+	opacity: 0.8;
 }
 
 .karty {
@@ -376,10 +372,15 @@ a {
 .sticky {
     position: fixed;
     top: 0;
-    width: 98%;
+    width: 97%;
+}
+.sticky-ham {
+    position: fixed;
+    top: 65;
+    width: 97%;
 }
 
-.stickyH {
+.sticky-his {
     position: fixed;
     top: 0;
     width: 14%;
