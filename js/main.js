@@ -45,6 +45,7 @@ window.addEventListener('scroll', function (){
 
 let navHis = document.getElementById('navh');
 if(window.innerWidth >= 900) {
+	let stickyHis =navHis.offsetTop;
     if (window.pageYOffset >= stickyHis) {
     navHis.classList.add("sticky-his");
   } else {
