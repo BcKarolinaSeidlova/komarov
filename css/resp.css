@@ -1,17 +1,19 @@
 
 @media screen and (min-width: 900px) {
-	.box {
-		width: 95vw;
-	}
+
 
 .hamburger{
 	display: none;
 }
 
+.header {
+	width: 98%;
+}
 .navigation {
 	display: flex;
 	height: 1.8em;
 	padding: 0px 5px 0px;
+	width: 98%;
 	}
 	
 .nav-list {
@@ -43,6 +45,14 @@
 	padding: 0.5em;
 	text-align: left;
 	}
+.fotogalerie {
+	flex-direction: row;
+	align-items: center;
+
+}
+.foto-his {
+	max-height: 45vh;
+}
 
 .nav-item {
 	width: 15%;
@@ -80,10 +90,6 @@
 	opacity: 1;
 }
 
-.footer {
-	width: 95vw;
-}
-
 .vizitka {
 	display: flex;
 	flex-wrap: wrap;
@@ -116,15 +122,13 @@ margin-top: 1.5em;
 }
 
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 899px) {
 	.prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 35%;
   min-width: 45px;
   min-height: 45px;
-  color: white;
   font-weight: bold;
   font-size: 2em;
   user-select: none;

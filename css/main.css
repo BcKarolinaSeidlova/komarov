@@ -1,7 +1,6 @@
 body {
 	background-color: #f4ddba;
 	color: #683b05;
-	height: 100%;
 }
 
 .content {
@@ -238,6 +237,16 @@ a {
 	font-size: 1.5em;
 }
 
+.foto-his {
+	max-width: 98vw;
+}
+
+.fotogalerie {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 98vw;
+}
 
 /*
 *
@@ -250,9 +259,9 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 98%;
 	background-color: #96734d;
 	color: white;
+	width: 98vW;
 }
 
 .footer > p > a {
@@ -372,12 +381,6 @@ a {
 .sticky {
     position: fixed;
     top: 0;
-    width: 97%;
-}
-.sticky-ham {
-    position: fixed;
-    top: 65;
-    width: 97%;
 }
 
 .sticky-his {
