@@ -1,4 +1,5 @@
 
+
 @media screen and (min-width: 900px) {
 
 
@@ -45,14 +46,6 @@
 	padding: 0.5em;
 	text-align: left;
 	}
-.fotogalerie {
-	flex-direction: row;
-	align-items: center;
-
-}
-.foto-his {
-	max-height: 45vh;
-}
 
 .nav-item {
 	width: 15%;
@@ -94,7 +87,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-items: flex-start;
 	justify-content: space-around;
+	height: auto;
 }
 
 
@@ -104,9 +99,16 @@
 
 .right {
 width: 45vw;
-justify-content: flex-end;
+justify-content: space-between;
 margin-top: 1.5em;
+height: 100%;
+
 }
+
+.smerovka {
+	margin-top: auto;
+}
+
 
 .text {
 	width: 84%;
@@ -117,7 +119,10 @@ margin-top: 1.5em;
 	max-width: 90%;
 }
 
-
+.fotogalerie {
+		flex-direction: row;
+		justify-content: center;
+	}
 
 }
 
@@ -131,8 +136,7 @@ margin-top: 1.5em;
   min-height: 45px;
   font-weight: bold;
   font-size: 2em;
-  user-select: none;
-  -webkit-user-select: none;
+color: #fff;
 }
 
 .next {
@@ -148,6 +152,14 @@ margin-top: 1.5em;
 .nav-item-his {
 	font-size: 1.1em;
 }
+
+.foto-his {
+	max-height: 300px;
+	height: auto;
+	max-width: 85vw;
 }
+}
+
+
 
 

@@ -1,12 +1,13 @@
 body {
 	background-color: #f4ddba;
-	color: #683b05;
+	color: #683b05; 
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 
 .box {
@@ -237,15 +238,23 @@ a {
 	font-size: 1.5em;
 }
 
-.foto-his {
-	max-width: 98vw;
-}
+
 
 .fotogalerie {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 98vw;
+}
+.fotogalerie > figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.foto-his {
+	height: 45vh;
 }
 
 /*
@@ -254,14 +263,14 @@ a {
 *
 */
 .footer {
-	margin-top: auto;
+	margin-top: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #96734d;
 	color: white;
-	width: 98vW;
+	width: 100%;
 }
 
 .footer > p > a {
@@ -276,12 +285,14 @@ a {
 	display: flex;
 	justify-content: center;
 }
+
 .vizitka {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.1em;
 }
+
 .left {
 	width: 95vw;
 	display: flex;
@@ -289,6 +300,7 @@ a {
 	align-items: center;
 
 }
+
 .info {
 	display: flex;
 	flex-direction: column;
@@ -299,13 +311,14 @@ a {
 	width: 90vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
-
+	height: 100%;
 }
+
 .right > p {
 	text-align: justify;
-	margin-top: 0;
-	
+	margin-top: 0;	
 }
 
 .smerovka {
@@ -313,6 +326,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
 

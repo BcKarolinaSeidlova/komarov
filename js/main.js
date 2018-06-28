@@ -1,65 +1,76 @@
 let karty = document.getElementsByClassName('klik');
 let linky = document.getElementsByClassName('link');
+
 let navItems = document.getElementsByClassName('nav-item');
 let navLink = document.getElementsByClassName('nav-link');
 let navItemsHis = document.getElementsByClassName('nav-item-his');
 let navLinkHis = document.getElementsByClassName('link-his');
+let navHis = document.getElementById('navh');
+
 let ham = document.getElementsByClassName('hamburger')[0];
 let nav =document.getElementsByClassName('navigation')[0];
 let head = document.getElementsByClassName('header')[0];
 
+let minus = document.getElementById('minus');
+let plus = document.getElementById('plus');
+    
 
-window.addEventListener('resize', function () {
+
+
+
+//pri zmene velikosti se resetuje sticky menu (u navigace i historie)
+window.addEventListener('resize', resize) 
+function resize () {
         if(window.innerWidth >= 900) {
-           nav.style.display = "flex";
+           nav.style.display = 'flex';
            if (head.classList == 'box header sticky') {
-           head.classList.remove("sticky");
-           nav.classList.remove("sticky");}
+           head.classList.remove('sticky');
+           nav.classList.remove('sticky');}
         }
 
-        else {
+        else {navHis.classList.remove('sticky-his');
             if(ham.classList == 'hamburger change') 
-                {ham.classList.toggle('change'); nav.style.display = "none"; }
-            else {nav.style.display = "none"; }
+                {ham.classList.toggle('change'); nav.style.display = 'none'; }
+            else {nav.style.display = 'none'; }
     }
 
-});
+}
 
 
-// When the user scrolls the page, execute myFunction 
-window.addEventListener('scroll', function (){
-    var sticky = head.offsetTop;
+// sticky menu - pri scroll zustava videtelná navigace
+window.addEventListener('scroll', sticky);
+
+    function sticky (){
+    let sticky = head.offsetTop;
     let height = head.offsetHeight;
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// Pridava/odebira sticky class pro header a navigaci pri dosazeni pozice (sirka <900)
  if(window.innerWidth < 900) {
     if (window.pageYOffset >= sticky+1) {
-    head.classList.add("sticky");
-    nav.classList.add("sticky");
+    head.classList.add('sticky');
+    nav.classList.add('sticky');
     nav.style.top = height+"px";
   } else {
-    head.classList.remove("sticky");
-    nav.classList.remove("sticky");
+    head.classList.remove('sticky');
+    nav.classList.remove('sticky');
     nav.style.top = "";
   }
  }
 
-let navHis = document.getElementById('navh');
+//Pridava a odebira sticky class v bocni navigaci u historie
 if(window.innerWidth >= 900) {
 	let stickyHis =navHis.offsetTop;
     if (window.pageYOffset >= stickyHis) {
-    navHis.classList.add("sticky-his");
+    navHis.classList.add('sticky-his');
   } else {
-    navHis.classList.remove("sticky-his");
+    navHis.classList.remove('sticky-his');
   }
 }
 
 
-});
+}
 
 
-
-
-
+//prirazeni linku k mape a kartam
 for (let i = 0; i<karty.length;i++) {
 let karta = karty[i];
 let link = linky[i];
@@ -70,6 +81,7 @@ karta.addEventListener('click', function(){
 
 }
 
+//linky u tlacitek v navigaci
 for (let i = 0; i<navItems.length; i++) {
     let navItem = navItems[i];
 let link = navLink[i];
@@ -80,6 +92,7 @@ navItem.addEventListener('click', function(){
 
 }
 
+//linky u tlacitek v historii - bocni navigace
 for (let i = 0; i<navItemsHis.length; i++) {
     let navItemHis = navItemsHis[i];
 let linkHis = navLinkHis[i];
@@ -92,25 +105,23 @@ navItemHis.addEventListener('click', function(){
 
 
 
-
+// hamburger menu - pri kliknuti se rozbali/sbali
 ham.addEventListener('click', hamburger);
 
 function hamburger() {
-    ham.classList.toggle("change");
+    ham.classList.toggle('change');
     let y = document.getElementById('navigation');
 
-    if (y.style.display === "flex") {
-        y.style.display = "none";
+    if (y.style.display === 'flex') {
+        y.style.display = 'none';
     } else {
-        y.style.display = "flex";
+        y.style.display = 'flex';
     }
 
 };
 
 
-/*
-* SLIDESHOW
-*/
+//SLIDESHOW - posouvani obrazku u zastavenich
 
 let slideIndex = 1;
 showDivs(slideIndex);
@@ -122,12 +133,16 @@ function plusDivs(n) {
 
 function showDivs(n) {
 
-    let x = document.getElementsByClassName("slide");
+    let x = document.getElementsByClassName('slide');
     if (n > x.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = x.length} ;
     for (let i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = 'none'; 
     }
-    x[slideIndex-1].style.display = "flex"; 
+    x[slideIndex-1].style.display = 'flex'; 
 }
+
+//Eventlisterners pro tlačítka na slideshow
+plus.addEventListener('click', function() {plusDivs(1)});
+minus.addEventListener('click', function() {plusDivs(-1)});
 
