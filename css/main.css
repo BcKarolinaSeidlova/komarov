@@ -182,21 +182,20 @@ a {
 	padding-top: 4vh;
 }
 
-.text {
+.historie {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 97%;
+	width: 90vw;
 	font-size: 1.3em;
 }
 
-.text > p {
-	display: flex;
-	justify-content: center;
+.text > p{
 	text-align: justify;
-	margin-top: 0;
+	margin: 1em 0 0;
 }
+
 
 
 .list {
@@ -209,7 +208,6 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
 	padding-left: 0px;
 	margin-bottom: 10px;
 }
@@ -221,8 +219,9 @@ a {
 	list-style: none;
 	color: #683b05;
 	width: 85%;
-	height: 2em;
+	min-height: 2em;
 	font-size: 1.3em;
+	padding: 0.4em;
 	text-align: center;
 }
 
@@ -244,13 +243,15 @@ a {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 }
+
 .fotogalerie > figure {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 0 1em;
 }
 
 .foto-his {
@@ -400,5 +401,5 @@ a {
 .sticky-his {
     position: fixed;
     top: 0;
-    width: 14%;
+    width: 10%;
 }

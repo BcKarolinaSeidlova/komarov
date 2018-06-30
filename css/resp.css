@@ -45,6 +45,7 @@
 	font-size: 1.2em;
 	padding: 0.5em;
 	text-align: left;
+	height: 2em;
 	}
 
 .nav-item {
@@ -110,10 +111,6 @@ height: 100%;
 }
 
 
-.text {
-	width: 84%;
-	
-}
 
 .slide {
 	max-width: 90%;
@@ -121,7 +118,7 @@ height: 100%;
 
 .fotogalerie {
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 }
@@ -160,6 +157,10 @@ color: #fff;
 }
 }
 
-
+@media screen and (max-width: 530px) {
+	.nav-list-his {
+		font-size: 0.8em; 
+	}
+}
 
 
