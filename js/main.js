@@ -28,10 +28,11 @@ function resize () {
            nav.classList.remove('sticky');}
         }
 
-        else {navHis.classList.remove('sticky-his');
-            if(ham.classList == 'hamburger change') 
-                {ham.classList.toggle('change'); nav.style.display = 'none'; }
-            else {nav.style.display = 'none'; }
+        else {
+                nav.style.display = 'none'; 
+                ham.classList.remove('change');
+                if (navHis.length != 0) {
+                navHis.classList.remove('sticky-his');}
     }
 
 }
@@ -58,7 +59,7 @@ window.addEventListener('scroll', sticky);
 
 //Pridava a odebira sticky class v bocni navigaci u historie
 if(window.innerWidth >= 900) {
-	let stickyHis =navHis.offsetTop;
+	let stickyHis= navHis.offsetTop;
     if (window.pageYOffset >= stickyHis) {
     navHis.classList.add('sticky-his');
   } else {
@@ -140,9 +141,26 @@ function showDivs(n) {
         x[i].style.display = 'none'; 
     }
     x[slideIndex-1].style.display = 'flex'; 
+let height = x[slideIndex-1].offsetHeight;
+    plus.style.height = height+"px";
+    minus.style.height = height+"px";
 }
 
 //Eventlisterners pro tlačítka na slideshow
 plus.addEventListener('click', function() {plusDivs(1)});
 minus.addEventListener('click', function() {plusDivs(-1)});
 
+//zmeni vysku tlacitek pri zmene velikosti obrazku
+function changeHeight () {
+    let height = document.getElementsByClassName('slideshow')[0].offsetHeight;
+    plus.style.height = height+"px";
+    minus.style.height = height+"px";
+    let img = document.getElementsByClassName('foto-his');
+    if (img.length != 0) {
+        height = img[0].offsetHeight;
+        plus.style.height = height+"px";
+    minus.style.height = height+"px";
+    }
+}
+window.addEventListener('load', changeHeight);
+window.addEventListener('resize', changeHeight);
