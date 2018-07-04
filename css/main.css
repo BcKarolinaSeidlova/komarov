@@ -214,6 +214,10 @@ h3 {
 	margin: 0 0 0.5em;
 }
 
+.text >ul> li {
+	margin: 0 0 0.2em;
+}
+
 .list {
 	display: flex;
 	flex-direction: column;
@@ -349,6 +353,11 @@ h3 {
 	font-size: 1em;
 }
 
+.odkaz {
+	text-decoration: underline;
+	padding-bottom: 0.5em;
+}
+
 
 /*
 *
@@ -420,5 +429,5 @@ h3 {
 .sticky-his {
     position: fixed;
     top: 0;
-    width: 10%;
+    width: 12%;
 }
