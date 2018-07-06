@@ -260,29 +260,6 @@ h3 {
 
 
 
-.fotogalerie {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-.fotogalerie > figure {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 0 1em;
-}
-
-.foto-his {
-	height: 45vh;
-}
-
-.fotogalerie>div {
-	height: 45vh;
-}
 
 /*
 *
@@ -400,6 +377,7 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	margin-top: 25px;
 	margin-bottom: 10px;
 	width: 44vw;
@@ -437,3 +415,26 @@ h3 {
     width: 12%;
 }
 
+.fotogalerie {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	max-width: 60vw;
+}
+
+.fotogalerie > figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 1em;
+}
+
+.foto-his {
+	height: 45vh;
+}
+
+.fotogalerie>div {
+	height: 45vh;
+}
