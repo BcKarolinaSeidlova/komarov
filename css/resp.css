@@ -140,17 +140,18 @@ height: 100%;
 		cursor: pointer;
 		position: absolute;
 		font-weight: bold;
-		font-size: 2em;
-		color: #fff;
+		font-size: 3em;
+		color: #ffeddb;
+		text-shadow: -1px 0 #683b05, 0 1px #683b05, 1px 0 #683b05, 0 -1px #683b05;
 	}
 
 	.next {
-	  right: 0;
+	  right: 0.3em;
 	  margin-right: 0.6em;
 	}
 
 	.prev {
-		left: 0;
+		left: 0.3em;
 		margin-left: 0.6em;
 	}
 

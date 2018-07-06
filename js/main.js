@@ -144,6 +144,10 @@ function showDivs(n) {
 let height = x[slideIndex-1].offsetHeight;
     plus.style.height = height+"px";
     minus.style.height = height+"px";
+
+    function changeHeight () {
+    plus.style.height = height+"px";
+    minus.style.height = height+"px";}
 }
 
 //Eventlisterners pro tlačítka na slideshow
@@ -157,7 +161,7 @@ function changeHeight () {
     minus.style.height = height+"px";
     let img = document.getElementsByClassName('foto-his');
     if (img.length != 0) {
-        height = img[0].offsetHeight;
+        height = img[slideIndex-1].offsetHeight;
         plus.style.height = height+"px";
     minus.style.height = height+"px";
     }
