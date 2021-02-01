@@ -127,6 +127,11 @@ height: 100%;
 	font-size: 1.2em;
 }
 
+tr:hover {
+	font-weight: bold;
+}
+
+
 }
 
 
@@ -164,6 +169,17 @@ height: 100%;
 		height: auto;
 		max-width: 85vw;
 	}
+
+	.znak {
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+	table,
+	.valka {
+		width: 85vw;
+	}
+
 }
 
 @media screen and (max-width: 530px) {

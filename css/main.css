@@ -219,6 +219,13 @@ h3 {
 	margin: 0 0 0.2em;
 }
 
+.znak {
+	display: flex;
+	text-align: justify;
+	align-items: center;
+	margin: 1em 0 1em;
+}
+
 .list {
 	display: flex;
 	flex-direction: column;
@@ -340,7 +347,76 @@ h3 {
 	padding-bottom: 0.5em;
 }
 
+table {
+	border-collapse: collapse;
+	width: 45vw;
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
 
+table > caption {
+	font-size: 1.3em;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #c1a07c;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+	background-color: #f1d3a7;
+}
+
+tr:nth-child(even) {
+  background-color: #f9e9d2;
+}
+
+tr:hover {
+	background-color: #e7b365;
+}
+
+td:nth-child(1) {
+	width: 10%;
+}
+
+td:nth-child(2) {
+	width: 10%;
+}
+
+td:nth-child(3) {
+	width: 50%;
+}
+
+td:nth-child(4) {
+	width: 30%;
+}
+
+.valka > tbody > tr > td:nth-child(1) {
+	width: 25%;
+}
+
+.valka > tbody > tr > td:nth-child(2) {
+	width: 20%;
+}
+
+.valka > tbody > tr > td:nth-child(3) {
+	width: 55%;
+}
+
+.valka > tbody > tr {
+	background-color: #f9e9d2;
+}
+
+.valka > tbody> tr:hover {
+	background-color: #e7b365;
+}
+
+.valka > tbody > tr > th {
+	background-color: #f1d3a7;
+}
 /*
 *
 * Hamburger menu icon
@@ -429,6 +505,10 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	margin: 0 0 1em;
+}
+
+figcaption {
+	font-size: 1.3em;
 }
 
 .foto-his {
