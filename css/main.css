@@ -235,9 +235,11 @@ h3 {
 .nav-list-his {
 	display: flex;
 	flex-direction: row;
+ flex-wrap: wrap;
 	justify-content: center;
 	padding-left: 0px;
 	margin-bottom: 10px;
+ width: 90%;
 }
 
 .nav-item-his {
