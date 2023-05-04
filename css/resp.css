@@ -38,6 +38,7 @@
 .nav-list-his {
 	display: flex;
 	flex-direction: column;
+width: 95%;
 }
 
 .nav-item-his {
