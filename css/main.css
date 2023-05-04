@@ -498,7 +498,7 @@ td:nth-child(4) {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	max-width: 60vw;
+	max-width: 50vW;
 }
 
 .fotogalerie > figure {
@@ -514,9 +514,9 @@ figcaption {
 }
 
 .foto-his {
-	height: 45vh;
+	height: 40vh;
 }
 
 .fotogalerie>div {
-	height: 45vh;
+	height: 40vh;
 }
