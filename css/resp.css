@@ -163,7 +163,9 @@ tr:hover {
 	}
 
 	.foto-his {
-		height: 300px;
+		max-height: 300px;
+  max-width: 85%;
+  
 	}
 
 	.znak {
