@@ -156,7 +156,7 @@ minus.addEventListener('click', function() {plusDivs(-1)});
 
 //zmeni vysku tlacitek pri zmene velikosti obrazku
 function changeHeight () {
-    let height = document.getElementsByClassName('foto-his')[0].offsetHeight;
+    let height = document.getElementsByClassName('slideshow')[0].offsetHeight;
     plus.style.height = height+"px";
     minus.style.height = height+"px";
     let img = document.getElementsByClassName('foto-his');
