@@ -247,12 +247,12 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	color: #683b05;
-	width: 85%;
+	color: #683b05;
 	min-height: 2em;
 	font-size: 1.3em;
 	padding: 0.4em;
 	text-align: center;
+ min-width: 30%;
 }
 
 .nav-item-his:hover {
