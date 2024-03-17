@@ -170,5 +170,13 @@ window.addEventListener('load', changeHeight);
 window.addEventListener('resize', changeHeight);
 
 //vypisuje aktualni rok ve footeru
-let year = 2024;
-document.getElementById("year").innerHTML = year;
+
+let newDate = new Date;
+let newYear = newDate.getFullYear();
+let year = document.getElementById("year");
+
+function changeYear () {
+	year.innerHTML = newYear;
+}
+
+window.addEventListener('load', changeYear);
