@@ -14,10 +14,11 @@ let head = document.getElementsByClassName('header')[0];
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
     
-let newDate = new Date();
+let newDate = new Date;
 let newYear = newDate.getFullYear();
 let year = document.getElementById("year");
 
+year.innerHTML = "2018 - "+newYear;
 
 
 //pri zmene velikosti se resetuje sticky menu (u navigace i historie)
@@ -170,14 +171,3 @@ function changeHeight () {
 }
 window.addEventListener('load', changeHeight);
 window.addEventListener('resize', changeHeight);
-
-//vypisuje aktualni rok ve footeru
-
-//let newDate = new Date;
-//let newYear = newDate.getFullYear();
-//let year = document.getElementById("year");
-
-//function changeYear () {
-//	year.innerHTML = newYear;}
-
-year.addEventListener('load', year.innerHTML=newYear);
