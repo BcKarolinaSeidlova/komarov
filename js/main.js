@@ -14,7 +14,9 @@ let head = document.getElementsByClassName('header')[0];
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
     
-
+let newDate = new Date();
+let newYear = newDate.getFullYear();
+let year = document.getElementById("year");
 
 
 
@@ -171,12 +173,11 @@ window.addEventListener('resize', changeHeight);
 
 //vypisuje aktualni rok ve footeru
 
-let newDate = new Date;
-let newYear = newDate.getFullYear();
-let year = document.getElementById("year");
+//let newDate = new Date;
+//let newYear = newDate.getFullYear();
+//let year = document.getElementById("year");
 
-function changeYear () {
-	year.innerHTML = newYear;
-}
+//function changeYear () {
+//	year.innerHTML = newYear;}
 
-year.addEventListener('load', changeYear);
+year.addEventListener('load', year.innerHTML=newYear);
