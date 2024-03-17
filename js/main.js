@@ -179,4 +179,4 @@ function changeYear () {
 	year.innerHTML = newYear;
 }
 
-window.addEventListener('load', changeYear);
+year.addEventListener('load', changeYear);
