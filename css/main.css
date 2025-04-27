@@ -2,6 +2,7 @@ body {
 	background-color: #f4ddba;
 	color: #683b05;
 	min-height: 100vh;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .content {
@@ -83,6 +84,7 @@ h3 {
 .nav-item {
 	width: 95%;
 	font-size: 1.4em;
+	flex-direction: row;
     
 
 }
@@ -96,6 +98,30 @@ h3 {
     
 }
 
+#Menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+  color: #683B05;
+  font-size: 1em;
+  padding: 5px;
+  border: 2px solid #C1A07C;
+  border-radius: 20px;
+  background-color: #ffeddb;
+  box-shadow: rgb(193, 160, 124) 0px 12px 12px;
+}
+
+button:hover, button:active {
+  font-weight: bold;
+  background-color: #C1A07C;
+  border-color: #ffeddb;
+  color: #ffeddb;
+  box-shadow: rgb(193, 160, 124) 12px 0px 12px;
+}
 
 /*
 *
@@ -193,11 +219,7 @@ h3 {
 }
 
 .cely-text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 90vw;
+	width: 85%;
 	padding-top: 4vh;
 }
 
@@ -229,17 +251,17 @@ h3 {
 .list {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 15%;
 }
 
 .nav-list-his {
 	display: flex;
 	flex-direction: row;
- flex-wrap: wrap;
+        flex-wrap: wrap;
 	justify-content: center;
 	padding-left: 0px;
 	margin-bottom: 10px;
- width: 90%;
+        width: 90%;
 }
 
 .nav-item-his {
@@ -247,18 +269,19 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	color: #683b05;
+	color: #683b05;
+
 	min-height: 2em;
 	font-size: 1.3em;
 	padding: 0.4em;
 	text-align: center;
- min-width: 30%;
+        min-width: 30%;
 }
 
 .nav-item-his:hover {
 	background: rgba(193,160,124,1);
-    color: white;
-    cursor: pointer;
+        color: white;
+        cursor: pointer;
 }
 
 .nadpis {
@@ -267,7 +290,11 @@ h3 {
 	font-size: 1.5em;
 }
 
-
+#DIV1, #DIV2, #DIV3, #DIV4, #DIV5, #DIV6, #DIV7, #DIV8 {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: justify;
+}
 
 
 /*
@@ -450,7 +477,6 @@ td:nth-child(4) {
 /*
 * SLIDESHOW
 */
-
 .slideshow {
 	display: flex;
 	flex-direction: row;
@@ -458,14 +484,15 @@ td:nth-child(4) {
 	align-items: center;
 	margin-top: 25px;
 	margin-bottom: 10px;
-	width: 44vW;
 }
 
 .slide {
-	max-width: 90vW;
+	max-width: 80vW;
+	flex-direction: column;
+	justify-content: center;
 
 }
-.btn {
+.btn {  align-self: flex-start;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -473,6 +500,7 @@ td:nth-child(4) {
 	font-size: 30px;
 	cursor: pointer;
 	color: #683b05;
+        height: 30vh;
 }
 
 
@@ -490,15 +518,22 @@ td:nth-child(4) {
 .sticky-his {
     position: fixed;
     top: 0;
-    width: 12%;
+    width: 14%;
 }
 
 .fotogalerie {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#foto, #fotoValka {
+	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	max-width: 50vW;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .fotogalerie > figure {
@@ -517,6 +552,3 @@ figcaption {
 	height: 400px;
 }
 
-.fotogalerie>div {
-	height: 40vh;
-}
